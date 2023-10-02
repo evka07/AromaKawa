@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.0.0/css/all.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>AromaKawa</title>
+</head>
+<body>
+<header class="header">
+    <div class="header__background"></div>
+    <div class="header__container _container">
+        <div class="header__log">
+            <p class="header__logo-item">EL TIGRE</p>
+            <p class="header__logo-item2">Venezuela coffee beans</p>
+        </div>
+        <nav class="header__navbar">
+            <ul class="navbar__list">
+                <li class="navbar__item">
+                    <button class="navbar__btn" type="button" id="navbar__home">Home</button>
+                </li>
+                <li class="navbar__item">
+                    <button class="navbar__btn" type="button" id="navbar__products">Products</button>
+                </li>
+                <li class="navbar__item">
+                    <button class="navbar__btn" type="button" id="navbar__contact">Contacts</button>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <div class="header__content">
+        <div class="header__content__text">
+            <p class="header__content-text1">Home of</p>
+            <p class="header__content-text2">Original tastes</p>
+        </div>
+        <div class="header__line"></div>
+    </div>
+    <div class="header__discover">
+        <div class="header__discover__text">Discover</div>
+        <button class="header__discover__btn" type="button">
+            <i class="fa-regular fa-circle-down" style="color: #ffffff;"></i>
+        </button>
+    </div>
+</header>
+
+
+<div id="pages">
+    <section class="home__section" id="home">
+        <div class="home__container container">
+            <div class="home__products">
+                <h1>Products</h1>
+            </div>
+            <div class="home__line"></div>
+            <div class="home__cards">
+                <div class="home__card__item"></div>
+                <div class="home__card__item"></div>
+                <div class="home__card__item"></div>
+                <div class="home__card__item"></div>
+                <div class="home__card__item"></div>
+                <div class="home__card__item"></div>
+            </div>
+        </div>
+        <div class="about__container">
+            <div class="about__background"></div>
+        </div>
+        <footer class="footer__title">
+            <div><a href="#">©2023 EL TIGRE inc</a></div>
+        </footer>
+    </section>
+    <section class="products__section" id="products">
+        <div class="product__item">
+            <h1>Products</h1>
+        </div>
+        <div class="home__line"></div>
+        <ul id="productContainer">
+            <script id="product-template" type="text/x-handlebars-template">
+
+
+                <div class="card__content">
+                    <h3>{{name}}</h3>
+                    <div class="card__description">
+                        <div class="description__line"></div>
+                        <div class="description__text">
+                            {{description}}
+                        </div>
+                    </div>
+                    <div>
+                        <div class="rating__text">
+                        {{price}}
+                        </div>
+                        <div class="rating__image">
+                            <img src="" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="card__image"><img src="{{images}}"></div>
+            </script>
+        </ul>
+    </section>
+
+
+    <section class="contact__section" id="contact">
+        <div class="contact__container container">
+            <div class="contact__text">
+                <h2>Contact</h2>
+            </div>
+            <div class="contact__line"></div>
+            <form class="form__contact" id="form">
+                <div>Name</div>
+                <input type="text" class="name" required="required">
+                <div>Title</div>
+                <input type="text" class="name" required="required">
+                <div>Message</div>
+                <textarea class="message" name="message"></textarea>
+                <input type="submit" class="submit__btn" value="Submit">
+            </form>
+            <div class="section__contact__text"><a href="#">©2023 EL TIGRE inc</a></div>
+        </div>
+    </section>
+</div>
+<script src="js/app.js" type="module"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.7/handlebars.min.js"></script>
+
+</body>
+</html>
