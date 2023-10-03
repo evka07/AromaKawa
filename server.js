@@ -6,7 +6,7 @@ const middlewares = jsonServer.defaults()
 server.use(middlewares)
 server.use(router)
 
-const port = 3132
+const port = 3131
 server.listen(port, () => {
     console.log(`Ok run`)
 })
