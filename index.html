@@ -81,7 +81,7 @@
         <div class="product__item">
             <h1>Products</h1>
         </div>
-        <div class="contact__line"></div>
+        <div class="product__line"></div>
         <ul class="cardContainer" id="productContainer">
             <script id="product-template" type="text/x-handlebars-template">
 
@@ -92,7 +92,9 @@
                         <div class="description__line"></div>
                         <div class="description__text">
                             {{description}}
+                            <div class="card__grade"><img src="{{grade}}"></div>
                         </div>
+
                     </div>
                     <div>
                         <div class="rating__text">
@@ -108,8 +110,9 @@
                 <div class="card__image"><img src="{{images}}"></div>
             </script>
         </ul>
-            <div><a href="#">©2023 EL TIGRE inc</a></div>
+            <div class="contact__link"><a href="#">©2023 EL TIGRE inc</a></div>
         </div>
+
 
     </section>
 

@@ -133,12 +133,15 @@ ul li {
     letter-spacing: 4px;
     word-spacing: 10px;
     font-size: 20px;
+    font-family: "Source Sans 3 italic ";
 }
 
 .header__logo-item2 {
     text-transform: uppercase;
     font-size: 10px;
     padding-top: 10px;
+    font-family: "Source Sans 3 italic ";
+    letter-spacing: 1px;
 }
 
 p {
@@ -162,6 +165,7 @@ p {
     color: #fff;
     font-size: 15px;
     border: none;
+    font-family: "Source Sans SemiBold 600";
 }
 
 .header__content {
@@ -430,8 +434,8 @@ input {
 }
 
 .card__content {
-    width: 75%;
-    padding-left: 20px;
+    width: 70%;
+    padding: 20px;
 }
 
 .card__content h3 {
@@ -453,6 +457,13 @@ input {
     background: #BEA67C;
 }
 
+.card__grade img {
+    width: 100px;
+    position: absolute;
+    display: flex;
+    margin: 40px 0 0 170px;
+}
+
 ul {
     padding: 0;
 }
@@ -465,6 +476,9 @@ ul {
     width: 100%;
 
 }
+
+
+
 .product__item {
     display: flex;
     justify-content: center;
@@ -476,7 +490,7 @@ ul {
     color: #BEA67C;
 }
 
-.contact__line {
+.product__line {
     position: absolute;
     left: 50%;
     width: 400px;
@@ -485,12 +499,12 @@ ul {
     background: #BEA67C;
 }
 
-a {
+.contact__link a {
     text-decoration: none;
     color: #000;
     display: flex;
     justify-content: center;
-    padding-top: 90px;
+    margin-top: 200px;
 }
 
 .rating__text {
