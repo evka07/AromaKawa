@@ -236,14 +236,17 @@ p {
 
 .contact__text {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    color: #BEA67C;
+    justify-content: center;
     text-transform: uppercase;
     gap: 10px;
     font-size: 40px;
-    padding-bottom: 20px;
     padding-top: 40px;
+    padding-bottom: 20px;
+    color: #BEA67C;
+    font-family: "Source Sans SemiBold 600";
+    letter-spacing: 1px;
+    font-weight: bold;
+
 }
 
 .contact__line {
@@ -514,6 +517,11 @@ ul {
     font-size: 15px;
     font-family: "Source Sans 3 italic ";
     font-weight: bold;
+    color: #BEA67C;
+}
+
+.rating__text span {
+    color: #000;
 }
 
 .intensity__text:first-child {
@@ -523,7 +531,7 @@ ul {
     font-size: 15px;
     font-family: "Source Sans 3 italic ";
     font-weight: bold;
-    color: black;
+    color: #000;
 }
 
 .intensity__text {
@@ -533,5 +541,9 @@ ul {
     font-size: 15px;
     font-family: "Source Sans 3 italic ";
     font-weight: bold;
-    color: darkgoldenrod;
+    color: #BEA67C;
+}
+
+.intensity__text span {
+    color: #000;
 }
