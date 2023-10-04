@@ -125,11 +125,19 @@ document.addEventListener("DOMContentLoaded", function () {
     contactForm.addEventListener('submit', function (event) {
         event.preventDefault()
 
-        const formData = new FormData(contactForm)
+        const formData = new FormData(contactForm);
+        const payload = {
+            name: formData.get('name'),
+            title: formData.get('title'),
+            message: formData.get('message')
+        }
 
         fetch('http://localhost:3131/contact', {
             method: "POST",
-            body: formData,
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(payload)
         })
             .then((response) => {
                 if (response.ok) {
@@ -144,7 +152,6 @@ document.addEventListener("DOMContentLoaded", function () {
             })
     })
 });
-
 
 
 
