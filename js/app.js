@@ -66,7 +66,7 @@ window.addEventListener('popstate', function (event) {
 document.addEventListener("DOMContentLoaded", function () {
     const productContainer = document.getElementById("productContainer");
 
-    fetch("http://localhost:80/products")
+    fetch('/products')
         .then((response) => response.json())
         .then((data) => {
             const source = document.getElementById("product-template").innerHTML;
@@ -95,7 +95,7 @@ document.addEventListener("DOMContentLoaded", function () {
 document.addEventListener("DOMContentLoaded", function () {
     const productContainer = document.getElementById("homeContainer");
 
-    fetch("http://localhost:80/products")
+    fetch('/products')
         .then((response) => response.json())
         .then((data) => {
             const source = document.getElementById("home-template").innerHTML;
@@ -132,7 +132,7 @@ document.addEventListener("DOMContentLoaded", function () {
             message: formData.get('message')
         }
 
-        fetch('http://localhost:80/contact', {
+        fetch('/contact', {
             method: "POST",
             headers: {
                 'Content-Type': 'application/json'
